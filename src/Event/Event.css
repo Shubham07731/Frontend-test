@@ -1,0 +1,121 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+.event{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-evenly;
+    margin-top: 140px;
+}
+.cake-img>img{
+    width: 600px;
+    height: 600px;
+}
+.birthday-cards>span{
+font-size: 4rem;
+font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+color: #240D57;
+letter-spacing: 1.5px;
+}
+.birthday-cards>p{
+    font-size: 1.5rem;
+    color: #828282;
+}
+.cards{
+    margin-top: 30%;
+    display: flex;
+    justify-content: space-evenly;
+}
+.icon{
+    width: 50px;
+    height: 80px;
+    font-size:12px;
+}
+.cards-icons{
+    justify-content: center;
+    width: 80px;
+    background-color: white;
+}
+.cards>p{
+    position: relative;
+    top: 12px;
+
+}
+.text-date{
+    display: flex;
+    flex-direction: column;
+    letter-spacing: 1.5px;
+    font-weight: bold;
+}
+.first-date{
+    color:#240D57;
+    font-size: large;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.subheading{
+    font-size: 12px;
+    color: #828282;
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+.arrow{
+    margin-top: 15px;
+    margin-right: 40px;
+}
+.arrow-right{
+    font-size: 2rem;
+    color: #E0E0E0;
+}
+@media screen and (max-width:700px){
+    .event{
+        display: flex;
+        flex-direction: column;
+        max-width: 100%;
+        height: 100vh;
+   
+
+
+    }
+    .cake{
+        margin: 10px;
+    }
+    .cake-img>img{
+        max-width: 100%;
+    }
+    .main-cards{
+        justify-content: center;
+        justify-content: flex-start;
+    }
+    .birthday-cards>span{
+        font-size: 2.5rem;
+        font-weight: bold;
+       position: relative;
+       left: 27%;
+    }
+
+}
+
+@media screen and (max-width:1024px) and (orientation:portrait){
+    .event{
+        display: flex;
+        flex-direction: column;
+justify-content: center;
+text-align: center;
+    }
+    .cards{
+        justify-content: space-evenly;
+        transform: translateX(5%);
+        padding: 0px;
+        margin: 12px;
+    }
+    .birthday-cards>span{
+        font-size: 2.5rem;
+        font-weight: bold;
+        margin-left: -282px;
+    }
+    .birthday-cards>p{
+        font-size: 1.5rem;
+ 
+        margin-left: -202px;
+    }
+}
